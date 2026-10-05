@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Specs | AutoMetrics</title>
+    <!-- Link to the Recursive Font and CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/Website Logo.jpg" alt="AutoMetrics Logo">
+            <span class="logo-text">AutoMetrics</span>
+        </div>
+        <nav>
+           <span class="hamburger" onclick="document.getElementById('nav-links').classList.toggle('active')">☰</span>
+            <ul id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="compare.html">COMPARE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Compare Content -->
+    <main class="compare-container">
+        <h2 class="page-title">COMPARE SPECIFICATIONS</h2>
+        
+        <!-- The Data Table -->
+        <table class="specs-table">
+            <thead>
+                <tr>
+                    <th>FEATURES</th>
+                    <th>FORTUNER</th>
+                    <th>MONTERO</th>
+                    <th>TERRA</th>
+                    <th>EVEREST</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ENGINE TYPE</td>
+                    <td>2.4L Diesel</td>
+                    <td>2.4L Diesel</td>
+                    <td>2.5L Diesel</td>
+                    <td>2.0L Turbo Diesel</td>
+                </tr>
+                <tr>
+                    <td>STARTING PRICE</td>
+                    <td>P1.867 M</td>
+                    <td>P1.568 M</td>
+                    <td>P1.969 M</td>
+                    <td>P1.864 M</td>
+                </tr>
+                <tr>
+                    <td>SEATING CAPACITY</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>GROUND CLEARANCE</td>
+                    <td>279 mm</td>
+                    <td>218 mm</td>
+                    <td>225 mm</td>
+                    <td>223 mm</td>
+                </tr>
+                <tr>
+                    <td class="feature-col">TRANSMISSION</td>
+                    <td>AT</td>
+                    <td>AT</td>
+                    <td>AT</td>
+                    <td>AT</td>
+                </tr>
+                <tr>
+                    <td class="feature-col">FUEL ECONOMY</td>
+                    <td>14 km/L</td>
+                    <td>12-14 km/L</td>
+                    <td>10.7 km/L</td>
+                    <td>14 km/L</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Mobile Specific Spec Cards -->
+    <div class="mobile-specs">
+        <!-- Fortuner Card -->
+        <div class="spec-card">
+            <h3>TOYOTA FORTUNER</h3>
+            <div class="spec-details">
+                <p>Engine: 2.4L Diesel</p>
+                <p>Price: P1.867 M</p>
+                <p>Seating: 7</p>
+                <p>Clearance: 279 mm</p>
+                <p>Transmission: AT</p>
+                <p>Fuel Economy: 14 km/L</p>
+            </div>
+        </div>
+
+        <!-- Montero Card -->
+        <div class="spec-card">
+            <h3>MONTERO SPORTS</h3>
+            <div class="spec-details">
+                <p>Engine: 2.4L Diesel</p>
+                <p>Price: P1.568 M</p>
+                <p>Seating: 7</p>
+                <p>Clearance: 218 mm</p>
+                <p>Transmission: AT</p>
+                <p>Fuel Economy: 12-14 km/L</p>
+            </div>
+        </div>
+
+        <!-- Terra Card -->
+        <div class="spec-card">
+            <h3>NISSAN TERRA</h3>
+            <div class="spec-details">
+                <p>Engine: 2.5L Diesel</p>
+                <p>Price: P1.969 M</p>
+                <p>Seating: 7</p>
+                <p>Clearance: 225 mm</p>
+                <p>Transmission: AT</p>
+                <p>Fuel Economy: 10.7 km/L</p>
+            </div>
+        </div>
+
+        <!-- Everest Card -->
+        <div class="spec-card">
+            <h3>FORD EVEREST</h3>
+            <div class="spec-details">
+                <p>Engine: 2.0L Turbo Diesel</p>
+                <p>Price: P1.864 M</p>
+                <p>Seating: 7</p>
+                <p>Clearance: 223 mm</p>
+                <p>Transmission: AT</p>
+                <p>Fuel Economy: 14 km/L</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Request Dealer Quote Form -->
+        <div class="form-container">
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>REQUEST DEALER QUOTE</legend>
+                    
+                    <input type="text" name="fullname" placeholder="FULL NAME" required>
+                    <input type="email" name="email" placeholder="EMAIL ADDRESS" required>
+                    <input type="tel" name="phone" placeholder="CONTACT NUMBER" required>
+                    <input type="text" name="location" placeholder="DEALERSHIP LOCATION" required>
+                    <input type="text" name="model" placeholder="CAR MODEL/VARIANT" required>
+                    
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">SUBMIT</button>
+                        <button type="reset" class="btn-reset">RESET</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 AutoMetrics. All Rights Reserved.</p>
+        <p>Follow Us On FB/Instagram: @autometrics_official</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
